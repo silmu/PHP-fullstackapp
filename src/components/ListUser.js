@@ -10,7 +10,7 @@ export function ListUser() {
   }, []);
 
   function getUsers() {
-    axios.get('http://localhost:8005/api').then(function(response) {
+    axios.get('http://localhost:8005/api/').then(function(response) {
       console.log(response.data);
       setUsers(response.data);
     });
